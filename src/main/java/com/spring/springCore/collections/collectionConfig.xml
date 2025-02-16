@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">  
+    	
+    	<bean class="com.spring.springCore.collections.Emp" name="emp">
+    		<property name="name" value="Venky"/>
+    			
+    		<property name="address">
+    			<list>
+    				<value>"HYD"</value>
+    				<value>"Chennai"</value>
+    				<value>"Bangl"</value>
+    				<value>"Bangl"</value>
+    			</list>
+    		</property>
+    		
+    		<property name="phoneNum">
+    			<set>
+    				<value>"1234"</value>
+    				<value>"12345"</value>
+    				<value>"12346"</value>
+    				<value>"12346"</value>
+    			</set>
+    		</property>
+    		
+    		<property name="technologies">
+    			<map>
+    				<entry key="1" value="Java"></entry>
+    				<entry key="2" value="Spring"></entry>
+    				<entry key="2" value="Spring Boot"></entry>
+    			</map>
+    		</property> 
+    		
+    		<property name="props">
+    			<props>
+    				<prop key="Learning">"Java"</prop>
+    				<prop key="Have_to_Learn">"Spring"</prop>
+    			</props>
+    		</property>   		
+    	</bean>
+ </beans>

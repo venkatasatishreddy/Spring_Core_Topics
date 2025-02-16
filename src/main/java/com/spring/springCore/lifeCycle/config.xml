@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">  
+    	
+    	<!-- <bean class="com.spring.springCore.lifeCycle.Item" name="item" p:price="1234" init-method="hi" destroy-method="destroy"/> -->
+    	
+    	
+    	<!-- <bean class="com.spring.springCore.lifeCycle.Item1" name="item1" p:price="123456" /> -->    
+    	
+    	<!-- If we want to work with annotations, have to add below tag. Oterwisw, annotations won't work   -->
+    	<context:annotation-config/>
+    	
+    	<bean class="com.spring.springCore.lifeCycle.Item2" name="item2" p:price="123456789" />		
+    	
+      
+ </beans>

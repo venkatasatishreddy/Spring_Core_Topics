@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:x="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">  
+    	
+    	<!-- <bean class="com.spring.springCore.ci.Employee" name="emp">
+    		<constructor-arg name="empId">
+    			<value>1234</value>
+    			
+    		</constructor-arg>
+    		
+    		<constructor-arg name="empName">
+    			<value>"Hello"</value>    			
+    		</constructor-arg>
+    		
+    		<constructor-arg value="1234" type="int"/>
+    		<constructor-arg value="Hi" /> 		
+    		
+    		
+    	</bean>
+    	 -->
+    	<!-- <bean class="com.spring.springCore.ci.Employee" name="emp1" x:empId="1234" x:empName="Hiiii"/> -->
+    	
+    	<bean class="com.spring.springCore.ci.Profetional" name="prof" x:pname="Java" />
+    	
+    	<bean class="com.spring.springCore.ci.Employee" name="emp2" x:empId="1234" x:empName="Hiiiiiiii" x:profetional-ref="prof"/>
+    	
+    	
+    	
+      
+ </beans>
