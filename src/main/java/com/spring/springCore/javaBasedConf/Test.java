@@ -9,7 +9,11 @@ public class Test {
 	public static void main(String[] args) {
 		ApplicationContext context = new AnnotationConfigApplicationContext(JavaConfig.class);
 		Emp e = context.getBean("emp", Emp.class);
-		System.out.println(e);	
-		e.organization();		
+		
+		Emp e1 = context.getBean("emp", Emp.class);
+//		System.out.println(e);	
+		System.out.println("Hashcode : " + e.hashCode());
+		System.out.println("Hashcode : " + e1.hashCode());
+//		e.organization();		
 	}
 }
